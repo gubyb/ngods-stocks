@@ -65,6 +65,9 @@ RUN curl https://github.com/SpencerPark/IJava/releases/download/v1.3.0/ijava-1.3
 # Download iceberg spark runtime
   && curl https://search.maven.org/remotecontent?filepath=org/apache/iceberg/iceberg-spark-runtime-3.3_2.12/0.14.0/iceberg-spark-runtime-3.3_2.12-0.14.0.jar -Lo iceberg-spark-runtime-3.3_2.12-0.14.0.jar \
     && mv iceberg-spark-runtime-3.3_2.12-0.14.0.jar /opt/spark/jars \
+# Download delta lake
+  && curl https://repo1.maven.org/maven2/io/delta/delta-core_2.13/2.1.0/delta-core_2.13-2.1.0.jar -Lo delta-core_2.13-2.1.0.jar \
+    && mv delta-core_2.13-2.1.0.jar /opt/spark/jars \
 # Download Java AWS SDK
   && curl https://repo1.maven.org/maven2/software/amazon/awssdk/bundle/2.17.247/bundle-2.17.247.jar -Lo bundle-2.17.247.jar \
     && mv bundle-2.17.247.jar /opt/spark/jars \

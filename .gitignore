@@ -56,3 +56,4 @@ projects/dagster/metastore_db
 
 # Metabase 
 conf/metabase/metabase.db.trace.db
+conf/metabase/*

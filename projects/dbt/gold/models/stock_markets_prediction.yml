@@ -13,9 +13,4 @@ models:
         description: Ticker symbol
         tests:
           - not_null
-      - name: price_predicted
-        description: Ticker predicted price
-        tests:
-          - not_null      
-
       
